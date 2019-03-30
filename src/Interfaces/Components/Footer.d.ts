@@ -2,9 +2,8 @@
 import { Props } from 'react';
 //#endregion Global Imports
 
-declare module IHeading {
+declare module IFooter {
     export interface IProps extends Props<{}> {
-        text: string;
     }
 
     export interface IState { }

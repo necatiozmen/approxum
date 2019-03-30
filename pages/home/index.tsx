@@ -6,17 +6,16 @@ import { bindActionCreators, Dispatch } from 'redux';
 
 //#region Interface Imports
 import { IHomePage, IStore } from '@Interfaces';
-import { Heading } from '@Components';
 import { HomeActions } from '@Actions';
+import { Layout } from '@Components/';
 //#endregion Interface Imports
 
 export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState> {
 	public render(): JSX.Element {
 		return (
-			<div className="title">
-				Hello!
-				<Heading text="World!" />
-			</div>
+			<Layout pageType={'home'}>
+				TESTING LAYOUT
+			</Layout>
 		);
 	}
 }
