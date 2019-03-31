@@ -1,0 +1,174 @@
+.header-container {
+	.header {
+		&__logo {
+			width: 575px;
+			img {
+				width: 100%;
+			}
+		}
+
+		.navbar {
+			&-nav {
+				flex-wrap: wrap;
+				width: 73%;
+				justify-content: space-around;
+				margin-left: 50px;
+
+				a {
+					color: #4f4f4f;
+					font-weight: 600;
+					font-size: 18px;
+				}
+
+				.nav-link {
+					padding: 0.4rem 1rem !important;
+					color: #4f4f4f !important;
+				}
+
+				.nav-item {
+					border: 2px solid#4f4f4f;
+					text-transform: uppercase;
+					width: 170px;
+					text-align: center;
+					margin-bottom: 5px;
+				}
+				.active {
+					background-color: #ffc402;
+				}
+			}
+
+			&-lang {
+				display: flex;
+				flex-direction: column;
+				padding-left: 0;
+				margin-bottom: 0;
+				list-style: none;
+				text-align: center;
+
+				.lang-item {
+					background-color: #ffc402;
+					margin-bottom: 6px;
+					text-transform: uppercase;
+					width: 170px;
+
+					a {
+						color: #595959;
+						font-weight: 400;
+						font-size: 18px;
+					}
+				}
+			}
+		}
+
+		&-down {
+			position: relative;
+			.left {
+				background-color: #feca2e;
+				height: 25vh;
+				clip-path: polygon(0 0%, 100% 0%, 0 100%);
+			}
+			.right {
+				background-color: #4f4f4f;
+				height: 10vh;
+				clip-path: polygon(59% 100%, 100% 0, 100% 100%);
+				position: absolute;
+				right: 0;
+				top: 0;
+				width: 100%;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.header-container {
+		.header {
+			.navbar {
+				&-nav {
+					margin-left: 0;
+					width: 96%;
+				}
+
+				&-lang {
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.header-container {
+		.header {
+			&__logo {
+				width: 400px;
+				img {
+					width: 100%;
+				}
+			}
+			.navbar {
+				&-nav {
+					.nav-item {
+						width: 110px;
+						a {
+							font-size: 11px;
+						}
+					}
+				}
+				&-lang {
+					.lang-item {
+						width: 100px;
+						a {
+							font-size: 11px;
+						}
+					}
+				}
+				/*     &-lang{
+                margin-left: 90px;
+                margin-top: 15px;
+                flex-direction: row;
+
+                .lang-item {
+                    margin-right: 20px
+                }
+            } */
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 575px) {
+	.header-container {
+		.header {
+			&__logo {
+				width: 200px;
+				img {
+					width: 100%;
+				}
+			}
+			.navbar {
+				&-nav {
+					margin-left: 117px;
+					.nav-item {
+						width: 110px;
+						a {
+							font-size: 11px;
+						}
+					}
+				}
+				&-lang {
+					flex-direction: row;
+					margin-top: 15px;
+					.lang-item {
+						width: 100px;
+						margin-right: 20px;
+						a {
+							font-size: 11px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
