@@ -1,31 +1,38 @@
 .header {
 	&__logo {
-		width: 450px;
+		width: 575px;
 		img {
 			width: 100%;
 		}
 	}
 
 	.navbar {
+		&-toggler {
+		}
 		&-nav {
 			flex-wrap: wrap;
-            width: 60%;
-            justify-content: space-between;
-            margin-left: 50px;
-            margin-right: 50px;
+			width: 73%;
+			justify-content: space-around;
+			margin-left: 50px;
+
+			a {
+				color: #595959;
+				font-weight: 600;
+				font-size: 18px;
+			}
+
+			.nav-link {
+				padding: 0.4rem 1rem !important;
+			}
 
 			.nav-item {
-                border: 2px solid#595959;
-                text-transform: uppercase;
-                width: 170px;
-                text-align: center;
-                margin-bottom: 5px;
+				border: 2px solid#595959;
+				text-transform: uppercase;
+				width: 170px;
+				text-align: center;
+				margin-bottom: 5px;
 			}
-        }
-        
-        .test {
-            display: flex;
-        }
+		}
 
 		&-lang {
 			display: flex;
@@ -33,15 +40,108 @@
 			padding-left: 0;
 			margin-bottom: 0;
 			list-style: none;
+			text-align: center;
+
+			.lang-item {
+				background-color: #ffc402;
+				margin-bottom: 6px;
+				text-transform: uppercase;
+				width: 170px;
+
+				a {
+					color: #595959;
+					font-weight: 400;
+					font-size: 18px;
+				}
+			}
 		}
 	}
 }
 
+@media only screen and (max-width: 1199px) {
+	.header {
+		.navbar {
+			&-nav {
+				margin-left: 0;
+				width: 96%;
+			}
+
+			&-lang {
+			}
+		}
+	}
+}
 @media only screen and (max-width: 991px) {
+	.header {
+		&__logo {
+			width: 400px;
+			img {
+				width: 100%;
+			}
+		}
+		.navbar {
+			&-nav {
+				.nav-item {
+					width: 110px;
+					a {
+						font-size: 11px;
+					}
+				}
+			}
+			&-lang {
+				.lang-item {
+					width: 100px;
+					a {
+						font-size: 11px;
+					}
+				}
+			}
+			/*     &-lang{
+                margin-left: 90px;
+                margin-top: 15px;
+                flex-direction: row;
+
+                .lang-item {
+                    margin-right: 20px
+                }
+            } */
+		}
+	}
 }
 
 @media only screen and (max-width: 767px) {
 }
 
 @media only screen and (max-width: 575px) {
+    .header {
+		&__logo {
+			width: 200px;
+			img {
+				width: 100%;
+			}
+		}
+		.navbar {
+			&-nav {
+                margin-left: 117px;
+				.nav-item {
+					width: 110px;
+					a {
+						font-size: 11px;
+					}
+				}
+			}
+			&-lang {
+                 flex-direction: row;
+                  margin-top: 15px;
+				.lang-item {
+                    width: 100px;
+                     margin-right: 20px;
+					a {
+						font-size: 11px;
+					}
+                }
+                
+			}
+		}
+	}
 }
