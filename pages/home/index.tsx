@@ -14,7 +14,6 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 	public render(): JSX.Element {
 		return (
 			<Layout pageType={'home'}>
-				TESTING LAYOUT
 			</Layout>
 		);
 	}
