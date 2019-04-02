@@ -1,0 +1,36 @@
+.home {
+	&-wrapper {
+		position: relative;
+		padding-top: 50px;
+	}
+
+	display: flex;
+	&__title {
+        display: flex;
+        flex-direction: column;
+		color: #595959;
+		font-size: 68px;
+		font-weight: 600;
+		width: 40%;
+		text-align: right;
+        line-height: 1.1;
+        
+        p{
+            margin-bottom: 0 !important;
+        }
+	}
+
+	&__video {
+		margin-left: 60px;
+	}
+
+	&__img {
+		position: absolute;
+		width: 450px;
+		right: 60px;
+		top: 0;
+		img {
+			width: 100%;
+		}
+	}
+}

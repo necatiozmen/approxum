@@ -18,7 +18,7 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 		return (
 			<div className="header-container">
-				<nav className="navbar navbar-expand-md sticky-top header navbar-light">
+				<nav className="navbar navbar-expand-md header navbar-light">
 					<div className="container">
 						<div className="header__logo">
 							<img src="/static/image/logo.png" alt=""></img>

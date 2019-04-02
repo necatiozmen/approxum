@@ -64,12 +64,13 @@
 			position: relative;
 			.left {
 				background-color: #feca2e;
-				height: 25vh;
+				height: 190px;
 				clip-path: polygon(0 0%, 100% 0%, 0 100%);
 			}
 			.right {
 				background-color: #4f4f4f;
-				height: 10vh;
+			/* 	height: 10vh; */
+				height: 78px;
 				clip-path: polygon(59% 100%, 100% 0, 100% 100%);
 				position: absolute;
 				right: 0;
