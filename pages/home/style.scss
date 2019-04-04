@@ -25,9 +25,11 @@
 
 	&__video {
 		margin-left: 60px;
-		width: 100%;
 
 		width: 31%;
+		
+
+
 	}
 
 	&__img {
@@ -43,7 +45,7 @@
 
 @media only screen and (max-width: 1199px) {
 	.home {
-			background-position: 92% 23%;
+		background-position: 92% 23%;
 		&__title {
 			font-size: 45px;
 		}
@@ -54,15 +56,15 @@
 		flex-direction: column-reverse;
 		align-items: center;
 		padding-top: 35px;
-			background-size: 43%;
-	background-position: 96% 0%;
+		background-size: 43%;
+		background-position: 96% 0%;
 		&__title {
 			font-size: 28px;
 			flex-direction: row;
 			width: 90%;
 			padding-left: 100px;
 			padding-top: 10px;
-			p{
+			p {
 				margin-right: 5px;
 			}
 		}
@@ -76,14 +78,13 @@
 @media only screen and (max-width: 575px) {
 	.home {
 		padding-top: 80px;
-			background-size: 35%;
-	background-position: 94% 0%;
+		background-size: 35%;
+		background-position: 94% 0%;
 		&__title {
 			font-size: 26px;
 			flex-direction: column;
 			width: 52%;
 			padding-left: 0;
-			
 		}
 
 		&__video {
