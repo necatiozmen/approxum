@@ -9,6 +9,7 @@
 
 		.navbar {
 			&-nav {
+				padding: 0 1rem !important;
 				flex-wrap: wrap;
 				width: 73%;
 				justify-content: space-around;
@@ -64,14 +65,15 @@
 			position: relative;
 			.left {
 				background-color: #feca2e;
-				height: 190px;
+				height: 185px;
+				height: 25vh;
 				clip-path: polygon(0 0%, 100% 0%, 0 100%);
 			}
 			.right {
 				background-color: #4f4f4f;
-			/* 	height: 10vh; */
-				height: 78px;
-				clip-path: polygon(59% 100%, 100% 0, 100% 100%);
+				height: 10vh;
+/* 				height: 73px; */
+				clip-path: polygon(60% 100%, 100% 0, 100% 100%);
 				position: absolute;
 				right: 0;
 				top: 0;

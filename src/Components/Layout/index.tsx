@@ -12,7 +12,7 @@ export class Layout extends React.Component<ILayout.IProps, ILayout.IState> {
 			<>
 				<Header pageType={pageType} />
 					{this.props.children}
-		{/* 		<Footer /> */}
+				<Footer /> 
 			</>
 		);
 	}

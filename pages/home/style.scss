@@ -1,27 +1,33 @@
 .home {
-	&-wrapper {
-		position: relative;
-		padding-top: 50px;
-	}
-
 	display: flex;
+	padding-top: 70px;
+	background-image: url("/static/image/map.png");
+	background-repeat: no-repeat;
+	background-size: 34%;
+	background-position: 92% 0%;
+	position: absolute;
+	top: 36%;
+
 	&__title {
-        display: flex;
-        flex-direction: column;
+		display: flex;
+		flex-direction: column;
 		color: #595959;
-		font-size: 68px;
+		font-size: 72px;
 		font-weight: 600;
 		width: 40%;
 		text-align: right;
-        line-height: 1.1;
-        
-        p{
-            margin-bottom: 0 !important;
-        }
+		line-height: 1.1;
+
+		p {
+			margin-bottom: 0 !important;
+		}
 	}
 
 	&__video {
 		margin-left: 60px;
+		width: 100%;
+
+		width: 31%;
 	}
 
 	&__img {
@@ -31,6 +37,57 @@
 		top: 0;
 		img {
 			width: 100%;
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.home {
+			background-position: 92% 23%;
+		&__title {
+			font-size: 45px;
+		}
+	}
+}
+@media only screen and (max-width: 991px) {
+	.home {
+		flex-direction: column-reverse;
+		align-items: center;
+		padding-top: 35px;
+			background-size: 43%;
+	background-position: 96% 0%;
+		&__title {
+			font-size: 28px;
+			flex-direction: row;
+			width: 90%;
+			padding-left: 100px;
+			padding-top: 10px;
+			p{
+				margin-right: 5px;
+			}
+		}
+
+		&__video {
+			width: 50%;
+			margin-left: 0;
+		}
+	}
+}
+@media only screen and (max-width: 575px) {
+	.home {
+		padding-top: 80px;
+			background-size: 35%;
+	background-position: 94% 0%;
+		&__title {
+			font-size: 26px;
+			flex-direction: column;
+			width: 52%;
+			padding-left: 0;
+			
+		}
+
+		&__video {
+			width: 80%;
 		}
 	}
 }

@@ -15,7 +15,6 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 	public render(): JSX.Element {
 		return (
 			<Layout pageType={'home'}>
-				<div className="home-wrapper">
 					<div className="container-fluid home">
 						<div className="home__title">
 							<p>Your</p>
@@ -24,15 +23,14 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							<p>and West</p>
 						</div>
 						<div className="home__video">
-							<iframe width="470" height="275"
-								src="https://www.youtube.com/embed/K6oYyG0KcvQ">
-							</iframe>
-						</div>
-						<div className="home__img">
-							<img src="/static/image/map.png" alt="" />
+						<div className="embed-responsive embed-responsive-16by9">
+							<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowfullscreen></iframe>
+						</div> 
+						{/* 	<iframe width="470" height="275"
+								src="https://www.youtube.com/embed/tgbNymZ7vqY">
+							</iframe> */}
 						</div>
 					</div>
-				</div>
 			</Layout>
 		);
 	}
