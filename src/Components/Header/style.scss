@@ -72,7 +72,7 @@
 			.right {
 				background-color: #4f4f4f;
 				height: 10vh;
-/* 				height: 73px; */
+				/* 				height: 73px; */
 				clip-path: polygon(60% 100%, 100% 0, 100% 100%);
 				position: absolute;
 				right: 0;
@@ -134,15 +134,41 @@
                 }
             } */
 			}
+
+			&-down {
+				.left {
+					height: 15vh;
+				}
+				.right {
+					background-color: #4f4f4f;
+					height: 6vh;
+				}
+			}
 		}
 	}
 }
 
 @media only screen and (max-width: 767px) {
+	.header-container {
+		.header {
+			.navbar {
+				&-lang {
+					flex-direction: row;
+					.lang-item {
+						margin-right: 20px;
+					}
+				}
+			}
+		}
+	}
 }
 
 @media only screen and (max-width: 575px) {
 	.header-container {
+		.navbar {
+			z-index: 1;
+			    background-color: white;
+		}
 		.header {
 			&__logo {
 				width: 200px;
@@ -172,6 +198,15 @@
 					}
 				}
 			}
+					&-down {
+						.left {
+							height: 10vh;
+						}
+						.right {
+							background-color: #4f4f4f;
+							height: 4vh;
+						}
+					}
 		}
 	}
 }

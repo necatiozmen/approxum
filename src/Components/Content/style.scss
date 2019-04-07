@@ -1,0 +1,270 @@
+.content {
+	display: flex;
+	justify-content: center;
+	font-size: 18px;
+	color: #5d5d5d;
+
+	padding-top: 70px;
+	/*     padding-bottom: 100px; */
+	height: 310px;
+	background-image: url(/static/image/map.png);
+	background-repeat: no-repeat;
+	background-size: 34%;
+	background-position: 92% 0%;
+	position: absolute;
+	top: 36%;
+
+	.bold-p {
+		font-weight: 600;
+	}
+
+	&__left {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		position: relative;
+		text-align: right;
+		padding-right: 65px;
+		&:after {
+			content: "";
+			background-color: #ffc402;
+			position: absolute;
+			width: 2px;
+			height: 100%;
+			top: 0px;
+			right: 3%;
+			display: block;
+		}
+
+		&.services {
+			div:nth-child(2) {
+				align-self: flex-end;
+				width: 51%;
+			}
+		}
+		&.advantages {
+			div:nth-child(2) {
+				align-self: flex-end;
+				width: 30%;
+			}
+			div:nth-child(4) {
+				align-self: flex-end;
+				width: 35%;
+			}
+		}
+		&.contact {
+			div:nth-child(2) {
+				align-self: flex-end;
+				width: 20%;
+			}
+		}
+	}
+
+	&__right {
+		text-align: left;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 67%;
+		&.services {
+			div:nth-child(2) {
+				align-self: flex-start;
+				width: 52%;
+			}
+		}
+		&.advantages {
+			div:nth-child(2) {
+				align-self: flex-start;
+				width: 40%;
+			}
+			div:nth-child(4) {
+				align-self: flex-start;
+				width: 40%;
+			}
+		}
+
+		&.contact {
+			.social {
+				justify-content: flex-start;
+				&__item {
+					margin-right: 50px;
+				}
+			}
+		}
+
+		.weekday {
+			display: flex;
+			&__hours {
+				display: flex;
+				flex-direction: column;
+				padding-left: 20px;
+			}
+		}
+		.weekend {
+			&__hours {
+				padding-left: 20px;
+			}
+		}
+		.social {
+			display: flex;
+			justify-content: space-around;
+			&__item {
+				width: 40px;
+				.facebook {
+					width: 100%;
+				}
+				.instagram {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+	.content {
+		background-position: 96% 0%;
+		&__left {
+			&:after {
+				right: 5%;
+			}
+			&.services {
+				div:nth-child(2) {
+					width: 73%;
+				}
+			}
+			&.advantages {
+				div:nth-child(2) {
+					width: 55%;
+				}
+				div:nth-child(4) {
+					width: 55%;
+				}
+			}
+			&.contact {
+				div:nth-child(2) {
+					width: 40%;
+				}
+			}
+		}
+
+		&__right {
+			&.services {
+				div:nth-child(2) {
+					align-self: flex-start;
+					width: 66%;
+				}
+			}
+			&.advantages {
+				div:nth-child(2) {
+					align-self: flex-start;
+					width: 61%;
+				}
+				div:nth-child(4) {
+					align-self: flex-start;
+					width: 70%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.content {
+		font-size: 15px;
+		&__left {
+			&:after {
+				right: 7%;
+			}
+			&.services {
+				div:nth-child(2) {
+					width: 73%;
+				}
+			}
+			&.advantages {
+				div:nth-child(2) {
+					width: 55%;
+				}
+				div:nth-child(4) {
+					width: 61%;
+				}
+			}
+			&.contact {
+				div:nth-child(2) {
+					width: 50%;
+				}
+			}
+		}
+
+		&__right {
+			&.services {
+				div:nth-child(2) {
+					align-self: flex-start;
+					width: 70%;
+				}
+			}
+			&.advantages {
+				div:nth-child(2) {
+					align-self: flex-start;
+					width: 72%;
+				}
+				div:nth-child(4) {
+					align-self: flex-start;
+					width: 80%;
+				}
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.content {
+		flex-direction: column;
+		font-size: 13px;
+		top: 32%;
+		position: relative;
+		padding-top: 0px;
+		&__left {
+			padding-right: 0;
+			padding-bottom: 10px;
+			&:after {
+				width: 30%;
+				height: 2px;
+				bottom: 0;
+				top: auto;
+				right: 35%;
+			}
+		}
+		&__right {
+			padding-top: 0px;
+			    width: 90%;
+			&.services {
+				div:nth-child(2) {
+					align-self: flex-start;
+					width: 100%;
+				}
+			}
+			&.advantages {
+				div:nth-child(2) {
+					width: 100%;
+					margin-bottom: 2px;
+				}
+				div:nth-child(4) {
+					width: 100%;
+					margin-bottom: 2px;
+				}
+			}
+			&.contact {
+				div {
+					margin-bottom: 5px;
+				}
+				div:nth-child(4) {
+					margin-top: 10px;
+					justify-content: space-around;
+				}
+			}
+		}
+	}
+}
