@@ -1,6 +1,7 @@
 // PAGE INTERFACES
 export { IApp } from '@Interfaces/Pages/App.d.ts';
 export { IHomePage } from '@Interfaces/Pages/Home.d.ts';
+export { IContactPage } from '@Interfaces/Pages/Contact.d.ts';
 
 
 // COMPONENT INTERFACES

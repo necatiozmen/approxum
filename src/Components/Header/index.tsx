@@ -20,9 +20,11 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 			<div className="header-container">
 				<nav className="navbar navbar-expand-md header navbar-light">
 					<div className="container">
+						<Link href="/home" as="/">
 						<div className="header__logo">
 							<img src="/static/image/logo.png" alt=""></img>
 						</div>
+						</Link>
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 							<span className="navbar-toggler-icon"></span>
@@ -30,7 +32,7 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 						<div className="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul className="navbar-nav">
 								<li className={`nav-item ${pageType === 'contact' ? 'active' : ''}`}>
-									<Link href="/contact" as="/" >
+									<Link href="/contact" as="/contact" >
 										<a className="nav-link">Contact</a>
 									</Link>
 								</li>
