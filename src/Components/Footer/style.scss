@@ -36,10 +36,14 @@
 @media only screen and (max-width: 575px) {
 	.footer {
 		.left {
-			height: 4vh;
+			display: none;
+			height: 1vh;
+			clip-path: none;
 		}
 		.right {
-			height: 10vh;
+			position: relative;
+			height: 5vh;
+			clip-path: none;
 		}
 	}
 }

@@ -5,6 +5,7 @@ routes
 	.add('/contact', '/contact/index')
 	.add('/advantages', '/advantages/index')
 	.add('/services', '/services/index')
+	.add('/expertise', '/expertise/index')
 
 
 module.exports = routes;
