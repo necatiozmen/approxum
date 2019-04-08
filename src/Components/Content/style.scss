@@ -59,6 +59,17 @@
 				width: 20%;
 			}
 		}
+
+		&.expertise {
+			div:nth-child(2) {
+				align-self: flex-end;
+				width: 59%;
+			}
+			div:nth-child(3) {
+				align-self: flex-end;
+				width: 51%;
+			}
+		}
 	}
 
 	&__right {
@@ -120,12 +131,35 @@
 				}
 			}
 		}
+
+		&.expertise {
+			.linkedin {
+				display: flex;
+				align-items: center;
+
+				&__profile {
+					margin-right: 40px;
+					margin-left: 15px;
+					width: 18%;
+					img {
+						width: 100%;
+					}
+				}
+				&__logo {
+					width: 15%;
+					img {
+						width: 100%;
+					}
+				}
+			}
+		}
 	}
 }
 
 @media only screen and (max-width: 1199px) {
 	.content {
 		background-position: 96% 0%;
+		font-size: 16px;
 		&__left {
 			&:after {
 				right: 5%;
@@ -148,6 +182,14 @@
 					width: 40%;
 				}
 			}
+			&.expertise {
+				div:nth-child(2) {
+					width: 75%;
+				}
+				div:nth-child(3) {
+					width: 68%;
+				}
+			}
 		}
 
 		&__right {
@@ -165,6 +207,18 @@
 				div:nth-child(4) {
 					align-self: flex-start;
 					width: 70%;
+				}
+			}
+
+			&.expertise {
+				.linkedin {
+					&__profile {
+						margin-left: 10px;
+						width: 37%;
+					}
+					&__logo {
+						width: 20%;
+					}
 				}
 			}
 		}
@@ -196,6 +250,14 @@
 					width: 50%;
 				}
 			}
+			&.expertise {
+				div:nth-child(2) {
+					width: 89%;
+				}
+				div:nth-child(3) {
+					width: 75%;
+				}	
+			}
 		}
 
 		&__right {
@@ -215,6 +277,15 @@
 					width: 80%;
 				}
 			}
+
+			&.expertise{
+
+				.linkedin {
+					&__profile {
+						margin-left: 8px;
+					}
+				}
+			}
 		}
 	}
 }
@@ -226,20 +297,32 @@
 		top: 32%;
 		position: relative;
 		padding-top: 0px;
+		height: 360px;
+		    align-items: center;
 		&__left {
 			padding-right: 0;
-			padding-bottom: 10px;
+			padding-bottom: 25px;
 			&:after {
-				width: 30%;
+				width: 100%;
 				height: 2px;
 				bottom: 0;
 				top: auto;
-				right: 35%;
+				right: 0;
+			}
+
+				&.expertise {
+					text-align: center;
+				div:nth-child(2) {
+					width: 100%;
+				}
+				div:nth-child(3) {
+					width: 100%;
+				}	
 			}
 		}
 		&__right {
-			padding-top: 0px;
-			    width: 90%;
+			padding-top: 25px;
+			width: 90%;
 			&.services {
 				div:nth-child(2) {
 					align-self: flex-start;
@@ -265,6 +348,16 @@
 					justify-content: space-around;
 				}
 			}
+
+			&.expertise {
+				.linkedin{
+
+					justify-content: center;
+
+				}
+			}
+
+
 		}
 	}
 }

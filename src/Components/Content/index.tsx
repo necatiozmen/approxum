@@ -49,7 +49,7 @@ export const Content = (props: any): JSX.Element => {
 				<div>Representing your interests in person locally.</div>
 			</div>
 		</div>;
-	} else if (props.pageType === 'contact'){
+	} else if (props.pageType === 'contact') {
 		return <div className="container-fluid content">
 			<div className="content__left contact">
 				<div className="bold-p">Aproxum offices</div>
@@ -82,9 +82,37 @@ export const Content = (props: any): JSX.Element => {
 			</div>
 		</div>
 
+	} else if (props.pageType === 'expertise') {
+
+		return <div className="container-fluid content">
+			<div className="content__left expertise">
+				<div className="bold-p">Nureddin Macit</div>
+				<div>
+					Received a cum laude Master’s in Multilingual Communication (English, Dutch, Turkish) at
+					Ghent University and has broad experience in international business.
+				</div>
+				<div>
+					Has been specializing in international project management and
+					  cross-cultural communication in the past years.
+				</div>
+			</div>
+			<div className="content__right expertise">
+
+				<div className="linkedin">
+					<div className="linkedin__profile">
+						<img src="/static/image/profile.png" />
+					</div>
+					<div className="linkedin__logo">
+						<img src="/static/image/linkedin.png" />
+					</div>
+				</div>
+			</div>
+		</div>;
 	}
 
-}
+	return '';
+
+};
 
 
 {/* <div className="content__left">
