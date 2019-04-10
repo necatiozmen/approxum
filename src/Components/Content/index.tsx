@@ -3,19 +3,24 @@ import * as React from 'react';
 //#region Local Imports
 import './style.scss';
 //#endregion Local Imports
+import { withNamespaces} from '../../../i18n'
 
 import { data } from '../../../static/content-info';
 
-export const Content = (props: any): JSX.Element => {
+ const Content = (props: any): JSX.Element => {
 
 	const { left, right } = data.advantages;
+
+	console.log(props.t);
+	
 
 
 	if (props.pageType === 'advantages') {
 
 		return <div className="container-fluid content">
 			<div className="content__left advantages">
-				<div className="bold-p">Be local abroad</div>
+				{/* <div className="bold-p">Be local abroad</div> */}
+				<div className="bold-p">{props.t('common:test')}</div>
 				<div>Don’t compromise your effectiveness or efficiency.
 				</div>
 				<div className="bold-p">Gain time</div>
@@ -113,6 +118,8 @@ export const Content = (props: any): JSX.Element => {
 	return '';
 
 };
+
+export default withNamespaces('common')(Content);
 
 
 {/* <div className="content__left">

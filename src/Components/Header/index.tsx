@@ -1,11 +1,13 @@
 //#region Global Imports
 import * as React from 'react';
 import Link from 'next/link'
+import { i18n,  withNamespaces } from '../../../i18n';
 //#endregion Global Imports
 
 //#region Local Imports
 import './style.scss';
 //#endregion Local Imports
+
 
 //#region Interface Imports.
 import { IHeader } from '@Interfaces';
@@ -57,17 +59,17 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 							</ul>
 						</div>
 						<ul className="navbar-lang">
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('en')} >
 								<Link href="/home" as="/" >
 									<a className="nav-link">English</a>
 								</Link>
 							</li>
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('nl')}>
 								<Link href="/home" as="/" >
 									<a className="nav-link">Nederlands</a>
 								</Link>
 							</li>
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('tr')}>
 								<Link href="/home" as="/" >
 									<a className="nav-link">Turkce</a>
 								</Link>

@@ -12,7 +12,7 @@ export default class ContactPage extends React.Component<IContactPage.IProps, IC
 	public render(): JSX.Element {
 		return (
 			<Layout pageType={'contact'}>
-				<Content pageType={'contact'} />
+				<Content t={this.props.t} pageType={'contact'} />
 			</Layout>
 		);
 	}
