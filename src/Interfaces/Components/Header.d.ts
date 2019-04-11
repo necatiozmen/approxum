@@ -5,6 +5,7 @@ import { Props } from 'react';
 declare module IHeader {
     export interface IProps extends Props<{}> {
         pageType: string;
+        t: any;
     }
 
     export interface IState { }

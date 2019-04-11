@@ -14,7 +14,6 @@ export default class AdvantagesPage extends React.Component<IAdvantagesPage.IPro
 		return (
 			<Layout pageType={'advantages'}>
 				<Content pageType={'advantages'} />
-
 			</Layout>
 		);
 	}

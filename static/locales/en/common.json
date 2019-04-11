@@ -1,3 +1,44 @@
 {
-    "test": "english"
+    "home": {
+        "Your": "Your",
+        "bridge": "bridge",
+        "between East": "between East",
+        "and West": "and West"
+    },
+    "header": {
+        "contact": "contact",
+        "advantages": "advantages",
+        "services": "services",
+        "expertise": "expertise"
+    },
+    "contact": {
+        "Aproxum offices": "Aproxum offices",
+        "Working hours": "Working hours",
+        "Weekdays": "Weekdays",
+        "Weekends": "Weekends"
+    },
+    "advantages": {
+        "Be local abroad": "Be local abroad",
+        "Don’t compromise your effectiveness or efficiency": "Don’t compromise your effectiveness or efficiency.",
+        "Gain time": "Gain time",
+        "Tell us your needs and leave the execution to professionals": "Tell us your needs and leave the execution to professionals. ",
+        "Benefit fiscally": "Benefit fiscally",
+        "Invoice your expenses and prevent incurring personnel wages": "Invoice your expenses and prevent incurring personnel wages.",
+        "Develop knowledge": "Develop knowledge",
+        "Prevent harsh lessons afterwards": "Prevent harsh lessons afterwards and acquire practices while doing business."
+    },
+    "services": {
+        "General administration": "General administration",
+        "communicative": "24/7 communicative and administrative suppor: Submission of applications, power of attorneys, certifierd translations, follow-up, ..",
+        "Research": "Research",
+        "Collecting data according to your interests": "Collecting data according to your interests.",
+        "Interposition": "Interposition",
+        "Facilitating your contact with local and trustworthy contractors, customers": "Facilitating your contact with local and trustworthy contractors, customers",
+        "Representation": "Representation",
+        "Representing your interests in person locally": "Representing your interests in person locally."
+    },
+    "expertise": {
+        "Received a cum laude Master": "Received a cum laude Master’s in Multilingual Communication (English, Dutch, Turkish) at Ghent University and has broad experiencein international business.",
+        "Has been specializing in international project": "Has been specializing in international project management and cross-cultural communication in the past years."
+    }
 }

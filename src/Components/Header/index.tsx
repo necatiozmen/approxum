@@ -13,10 +13,10 @@ import './style.scss';
 import { IHeader } from '@Interfaces';
 //#endregion Interface Imports
 
-export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
+class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	public render(): JSX.Element {
-		const { pageType } = this.props;
+		const { pageType, t } = this.props;
 
 		return (
 			<div className="header-container">
@@ -35,25 +35,25 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 							<ul className="navbar-nav">
 								<li className={`nav-item ${pageType === 'contact' ? 'active' : ''}`}>
 									<Link href="/contact" as="/contact" >
-										<a className="nav-link">Contact</a>
+										<a className="nav-link">{t('common:header.contact')}</a>
 									</Link>
 								</li>
 
 								<li className={`nav-item ${pageType === 'advantages' ? 'active' : ''}`}>
 									<Link href="/advantages" as="/advantages" prefetch>
-										<a className="nav-link">Advantages</a>
+										<a className="nav-link">{t('common:header.advantages')}</a>
 									</Link>
 								</li>
 
 								<li className={`nav-item ${pageType === 'services' ? 'active' : ''}`}>
 									<Link href="/services" as="/services">
-										<a className="nav-link">Services</a>
+										<a className="nav-link">{t('common:header.services')}</a>
 									</Link>
 
 								</li>
 								<li className={`nav-item ${pageType === 'expertise' ? 'active' : ''}`}>
 									<Link href="/expertise" as="/expertise" prefetch>
-										<a className="nav-link">Expertise</a>
+										<a className="nav-link">{t('common:header.expertise')}</a>
 									</Link>
 								</li>
 							</ul>
@@ -87,3 +87,5 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	}
 }
+
+export default withNamespaces('common')(Header);
