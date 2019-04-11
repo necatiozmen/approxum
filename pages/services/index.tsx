@@ -10,10 +10,10 @@ import { Content, Layout } from '@Components';
 
 export default class ServicesPage extends React.Component<IServicesPage.IProps, IServicesPage.IState> {
 	public render(): JSX.Element {
+		
 		return (
 			<Layout pageType={'services'}>
 				<Content pageType={'services'} />
-
 			</Layout>
 		);
 	}

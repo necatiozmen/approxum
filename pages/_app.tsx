@@ -4,6 +4,7 @@ import * as React from 'react';
 
 import { Provider } from 'react-redux';
 import withRedux from 'next-redux-wrapper';
+import { appWithTranslation } from '../i18n'
 //#endregion Global Imports
 
 //#region Local Imports
@@ -43,4 +44,4 @@ class MyApp extends App<IApp.IProps> {
     }
 }
 
-export default withRedux(store)(MyApp);
+export default withRedux(store)(appWithTranslation(MyApp));

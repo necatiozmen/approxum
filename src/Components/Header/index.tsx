@@ -1,20 +1,22 @@
 //#region Global Imports
 import * as React from 'react';
 import Link from 'next/link'
+import { i18n,  withNamespaces } from '../../../i18n';
 //#endregion Global Imports
 
 //#region Local Imports
 import './style.scss';
 //#endregion Local Imports
 
+
 //#region Interface Imports.
 import { IHeader } from '@Interfaces';
 //#endregion Interface Imports
 
-export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
+class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	public render(): JSX.Element {
-		const { pageType } = this.props;
+		const { pageType, t } = this.props;
 
 		return (
 			<div className="header-container">
@@ -33,41 +35,41 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 							<ul className="navbar-nav">
 								<li className={`nav-item ${pageType === 'contact' ? 'active' : ''}`}>
 									<Link href="/contact" as="/contact" >
-										<a className="nav-link">Contact</a>
+										<a className="nav-link">{t('common:header.contact')}</a>
 									</Link>
 								</li>
 
 								<li className={`nav-item ${pageType === 'advantages' ? 'active' : ''}`}>
 									<Link href="/advantages" as="/advantages" prefetch>
-										<a className="nav-link">Advantages</a>
+										<a className="nav-link">{t('common:header.advantages')}</a>
 									</Link>
 								</li>
 
 								<li className={`nav-item ${pageType === 'services' ? 'active' : ''}`}>
 									<Link href="/services" as="/services">
-										<a className="nav-link">Services</a>
+										<a className="nav-link">{t('common:header.services')}</a>
 									</Link>
 
 								</li>
 								<li className={`nav-item ${pageType === 'expertise' ? 'active' : ''}`}>
 									<Link href="/expertise" as="/expertise" prefetch>
-										<a className="nav-link">Expertise</a>
+										<a className="nav-link">{t('common:header.expertise')}</a>
 									</Link>
 								</li>
 							</ul>
 						</div>
 						<ul className="navbar-lang">
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('en')} >
 								<Link href="/home" as="/" >
 									<a className="nav-link">English</a>
 								</Link>
 							</li>
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('nl')}>
 								<Link href="/home" as="/" >
 									<a className="nav-link">Nederlands</a>
 								</Link>
 							</li>
-							<li className={`lang-item`}>
+							<li className={`lang-item`} onClick={() => i18n.changeLanguage('tr')}>
 								<Link href="/home" as="/" >
 									<a className="nav-link">Turkce</a>
 								</Link>
@@ -85,3 +87,5 @@ export class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	}
 }
+
+export default withNamespaces('common')(Header);
