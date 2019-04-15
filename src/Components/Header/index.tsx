@@ -1,7 +1,7 @@
 //#region Global Imports
 import * as React from 'react';
 import Link from 'next/link'
-import { i18n,  withNamespaces } from '../../../i18n';
+import { i18n, withNamespaces } from '../../../i18n';
 //#endregion Global Imports
 
 //#region Local Imports
@@ -16,16 +16,16 @@ import { IHeader } from '@Interfaces';
 class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	public render(): JSX.Element {
-		const { pageType, t } = this.props;
+		const { lng, pageType, t } = this.props;
 
 		return (
 			<div className="header-container">
 				<nav className="navbar navbar-expand-md header navbar-light">
 					<div className="container">
 						<Link href="/home" as="/">
-						<div className="header__logo">
-							<img src="/static/image/logo.png" alt=""></img>
-						</div>
+							<div className="header__logo">
+								<img src="/static/image/logo.png" alt=""></img>
+							</div>
 						</Link>
 						<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
 							aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -57,24 +57,25 @@ class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 									</Link>
 								</li>
 							</ul>
+							<div className="navbar-home">
+								<ul className="navbar-lang">
+									<li className={`lang-item ${lng === 'en' ? 'active' : ''}`} onClick={() => i18n.changeLanguage('en')} >
+										<a className="nav-link">EN</a>
+									</li>
+									<li className={`lang-item ${lng === 'nl' ? 'active' : ''}`} onClick={() => i18n.changeLanguage('nl')}>
+										<a className="nav-link">NL</a>
+									</li>
+									<li className={`lang-item ${lng === 'tr' ? 'active' : ''}`} onClick={() => i18n.changeLanguage('tr')}>
+										<a className="nav-link">TR</a>
+									</li>
+								</ul>
+								<div className={`nav-item ${pageType === 'home' ? 'active' : ''}`}>
+									<Link href="/home" as="/home">
+										<a className="nav-link">Home</a>
+									</Link>
+								</div>
+							</div>
 						</div>
-						<ul className="navbar-lang">
-							<li className={`lang-item`} onClick={() => i18n.changeLanguage('en')} >
-								<Link href="/home" as="/" >
-									<a className="nav-link">English</a>
-								</Link>
-							</li>
-							<li className={`lang-item`} onClick={() => i18n.changeLanguage('nl')}>
-								<Link href="/home" as="/" >
-									<a className="nav-link">Nederlands</a>
-								</Link>
-							</li>
-							<li className={`lang-item`} onClick={() => i18n.changeLanguage('tr')}>
-								<Link href="/home" as="/" >
-									<a className="nav-link">Turkce</a>
-								</Link>
-							</li>
-						</ul>
 					</div>
 				</nav>
 				<div className="header-down">
