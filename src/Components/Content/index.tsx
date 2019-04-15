@@ -10,14 +10,17 @@ import { data } from '../../../static/content-info';
 const Content = (props: any): JSX.Element => {
 
 	const { t } = props;
-	
+
 	//TODO componentlestir switch case yap
 	if (props.pageType === 'advantages') {
 
 		return <div className="container-fluid content">
 			<div className="content__left advantages">
-				{/* <div className="bold-p">Be local abroad</div> */}
-				<div className="bold-p">{t('common:advantages.Be local abroad')}</div>
+				<div className="bold-p">
+				
+						{t('common:advantages.Be local abroad')}
+				
+				</div>
 				<div>
 					{t('common:advantages.Don’t compromise your effectiveness or efficiency')}
 				</div>
@@ -46,8 +49,8 @@ const Content = (props: any): JSX.Element => {
 			</div>
 			<div className="content__right services">
 				<div className="bold-p">{t('common:services.Interposition')}</div>
-				<div>{t('common:services.Facilitating your contact with local and trustworthy contractors, customers"')}
-			</div>
+				<div>{t('common:services.Facilitating your contact with local and trustworthy contractors')}
+				</div>
 				<div className="bold-p">{t('common:services.Representation')}</div>
 				<div>{t('common:services.Representing your interests in person locally')}</div>
 			</div>

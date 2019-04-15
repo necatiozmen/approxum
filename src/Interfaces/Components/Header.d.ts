@@ -6,6 +6,7 @@ declare module IHeader {
     export interface IProps extends Props<{}> {
         pageType: string;
         t: any;
+        lng: string;
     }
 
     export interface IState { }
