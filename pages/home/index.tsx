@@ -2,6 +2,7 @@
 import * as React from 'react';
 import { connect } from 'react-redux';
 import { bindActionCreators, Dispatch } from 'redux';
+import TextLoop from "react-text-loop";
 //#endregion Global Imports
 
 import './style.scss';
@@ -18,7 +19,20 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 				<div className="container-fluid home">
 					<div className="home__title">
 						<p>Your</p>
-						<p>[bridge]</p>
+						<p>[
+						<TextLoop
+								interval={[3000, 2000]}
+							/* 	springConfig={{ stiffness: 70, damping: 31 }}
+								adjustingSpeed={500}
+							 */
+							>
+								<span>bridge</span>
+								<span>connection</span>
+								<span>home</span>
+								<span>harbor</span>
+							</TextLoop>{""}
+							]
+						</p>
 						<p>between East</p>
 						<p>and West</p>
 					</div>
