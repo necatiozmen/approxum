@@ -1,0 +1,65 @@
+.InfoCard {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 20px;
+
+	&__icon {
+		width: 110px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__header {
+		color: #fff;
+		background-color: #4f4f4f;
+		padding: 8px 10px;
+		margin: 20px 0 10px;
+		font-weight: 600;
+	}
+
+	&__content {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+        color: #5d5d5d;
+        text-align: center;
+		.content {
+            
+			&__address {
+				text-align: center;
+				width: 80%;
+				margin-bottom: 8px;
+			}
+			&__num {
+				display: flex;
+				flex-direction: column;
+				padding: 10px 0;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 1199px) {
+}
+
+@media only screen and (max-width: 991px) {
+	.InfoCard {
+		margin-bottom: 30px;
+		font-size: 15px;
+	}
+}
+
+@media only screen and (max-width: 575px) {
+	.InfoCard {
+		&__content {
+			.content {
+				&__address {
+					width: 75%;
+				}
+			}
+		}
+	}
+}

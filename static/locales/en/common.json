@@ -12,13 +12,16 @@
         "expertise": "expertise"
     },
     "contact": {
-        "Aproxum offices": "Aproxum offices",
+        "Aproxum offices": "aproxum offices",
         "Working hours": "Working hours",
         "Weekdays": "Weekdays",
         "Weekends": "Weekends"
     },
     "advantages": {
+        "Do what you are good at": "Do what you are good at home while professionals take care of your businesselsewhere.",
         "Be local abroad": "Be local abroad",
+        "Work with trustworthy":"Work with trustworthy suppliers and clients abroad.",
+        "Acquire expertise while doing": "Acquire expertise while doing business at the same time.",
         "Don’t compromise your effectiveness or efficiency": "Don’t compromise your effectiveness or efficiency.",
         "Gain time": "Gain time",
         "Tell us your needs and leave the execution to professionals": "Tell us your needs and leave the execution to professionals. ",
