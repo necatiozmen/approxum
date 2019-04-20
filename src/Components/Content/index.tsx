@@ -14,7 +14,7 @@ const Content = (props: any): JSX.Element => {
 	//TODO componentlestir switch case yap
 	if (props.pageType === 'advantages') {
 
-		return <div className="container-fluid content">
+		/* return <div className="container-fluid content">
 			<div className="content__left advantages">
 				<div className="bold-p">
 				
@@ -35,7 +35,7 @@ const Content = (props: any): JSX.Element => {
 				<div className="bold-p">{t('common:advantages.Develop knowledge')}</div>
 				<div>{t('common:advantages.Prevent harsh lessons afterwards')}</div>
 			</div>
-		</div>;
+		</div>; */
 
 	} else if (props.pageType === 'services') {
 		return <div className="container-fluid content">
@@ -56,7 +56,7 @@ const Content = (props: any): JSX.Element => {
 			</div>
 		</div>;
 	} else if (props.pageType === 'contact') {
-		return <div className="container-fluid content">
+/* 		return <div className="container-fluid content">
 			<div className="content__left contact">
 				<div className="bold-p">{t('common:contact.Aproxum offices')}</div>
 				<div>Galgenberglaan 18a 9070 Destelbergen</div>
@@ -86,7 +86,7 @@ const Content = (props: any): JSX.Element => {
 					</div>
 				</div>
 			</div>
-		</div>
+		</div> */
 
 	} else if (props.pageType === 'expertise') {
 

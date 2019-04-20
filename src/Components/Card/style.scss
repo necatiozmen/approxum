@@ -5,17 +5,23 @@
 	font-size: 20px;
 
 	&__icon {
-		width: 110px;
+        width: 110px;
+        text-align: center;
+        
 
 		img {
 			width: 100%;
-		}
+        }
+        
+        .hourglass{
+            width: 67%;
+        }
 	}
 
 	&__header {
 		color: #fff;
 		background-color: #4f4f4f;
-		padding: 8px 10px;
+		padding: 8px 40px;
 		margin: 20px 0 10px;
 		font-weight: 600;
 	}
@@ -26,18 +32,27 @@
 		align-items: center;
         color: #5d5d5d;
         text-align: center;
-		.content {
-            
+        .content__info{
+            width: 80%;
+        }
+
+		.content { 
 			&__address {
 				text-align: center;
-				width: 80%;
-				margin-bottom: 8px;
+				width: 65%;
+				margin-bottom: 5px;
 			}
 			&__num {
 				display: flex;
 				flex-direction: column;
 				padding: 10px 0;
-			}
+            }
+            &__linkedin{
+                margin-bottom: 40px;
+                margin-top: 40px;
+                width: 150px;
+
+            }
 		}
 	}
 }

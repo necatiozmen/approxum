@@ -8,7 +8,7 @@ export default (props): JSX.Element => (
 
 	<div className={`${props.colType} InfoCard`}>
 		<div className="InfoCard__icon">
-			<img src={`/static/image/${props.icon}.png`} />
+			<img className={props.icon} src={`/static/image/${props.icon}.png`} />
 		</div>
 		<div className="InfoCard__header">
 			<span>{props.header}</span>
@@ -18,7 +18,7 @@ export default (props): JSX.Element => (
 				<>
 				<span className="content__address">{props.address}</span>
 					<div className="content__num">
-						<span>{props.numFirst}</span>
+						<span >{props.numFirst}</span>
 						<span>{props.numSecond}</span>
 					</div>
 					<span>{props.email}</span>
@@ -26,9 +26,13 @@ export default (props): JSX.Element => (
 			}
 			{(props.cardType === 'advantages' || props.cardType === 'services') &&
 				<>
-					<span>{props.content}</span>
+					<span className="content__info">{props.content}</span>
 				</>
 			}
+			{props.cardType === 'expertise' &&
+					<img className="content__linkedin" src={'/static/image/linkedin.png'} />
+			}
+
 		</div>
 	</div>
 );
