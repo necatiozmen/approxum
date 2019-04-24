@@ -1,0 +1,44 @@
+{
+    "home": {
+        "Your": "Doğu",
+        "bridge": "ve Batı",
+        "between East": "arasındaki",
+        "and West": "köprünüz"
+    },
+    "header": {
+        "contact": "İLETİŞİM",
+        "advantages": "KAZANCINIZ",
+        "services": "HİZMETLER",
+        "expertise": "UZMANLIK"
+    },
+    "contact": {
+        "Aproxum offices": "aproxum ofisleri",
+        "Working hours": "Çalışma saatleri",
+        "Weekdays": "Hafta içi",
+        "Weekends": "Hafta sonu"
+    },
+    "advantages": {
+        "Be local abroad": "Yurt dışında yerel hizmet sunun",
+        "Don’t compromise your effectiveness or efficiency": "Etkinliğinizden veya verimliliğinizden ödün vermeyin.",
+        "Gain time": "Zamandan tasarruf edin",
+        "Tell us your needs and leave the execution to professionals": "İhtiyaçlarınızı bizimle paylaşın ve sonrasını profesyonellere bırakın.",
+        "Benefit fiscally": "Mali avantaj elde edin",
+        "Invoice your expenses and prevent incurring personnel wages": "Giderlerinizi faturaya yansıtarak yüksek personel masraflarından kaçının.",
+        "Develop knowledge": "Bilgi biriktirin",
+        "Prevent harsh lessons afterwards": "Sonradan ders çırkarmak yerine iş yaparken bilgi birikimi edinin."
+    },
+    "services": {
+        "General administration": "Genel idare",
+        "communicative": "7/24 iletişim ve idare desteği. Başvuru, vekâletname, yeminli tercüme, dosya takibi...",
+        "Research": "Araştırma",
+        "Collecting data according to your interests": "İhtiyaçlarınız doğrultusunda veri toplama.",
+        "Interposition": "Aracılık",
+        "Facilitating your contact with local and trustworthy contractors": "Yerel ve güvenilir tedarikçi, müşteri, federasyon, noter, avukat ve muhasebecilerle bağlantınız.",
+        "Representation": "Temsil",
+        "Representing your interests in person locally": "Yerel mecralarda şahsi temsiliniz."
+    },
+    "expertise": {
+        "Received a cum laude Master": "Gent Üniversitesi Çok Dilli İletişim (İngilizce, Hollandaca, Türkçe) masterını derece ile bitirmiş, kapsamlı uluslararası işletme deneyimine sahiptir.",
+        "Has been specializing in international project": "Geçmiş yıllarda uluslararası proje idaresi ve kültürlerarası iletişim dallarında uzmanlaşmıştır."
+    }
+}

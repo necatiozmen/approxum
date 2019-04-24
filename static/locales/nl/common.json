@@ -1,0 +1,44 @@
+{
+    "home": {
+        "Your": "Uw",
+        "bridge": "brug",
+        "between East": "tussen Oost",
+        "and West": "West."
+    },
+    "header": {
+        "contact": "contact",
+        "advantages": "VOORDELEN",
+        "services": "DIENSTEN",
+        "expertise": "expertise"
+    },
+    "contact": {
+        "Aproxum offices": "aproxum kantoren",
+        "Working hours": "Openingsuren",
+        "Weekdays": "Weekdagen",
+        "Weekends": "Weekend"
+    },
+    "advantages": {
+        "Be local abroad": "Wees lokaal in het buitenland",
+        "Don’t compromise your effectiveness or efficiency": "Geef niet in op uw effectiviteit of efficiëntie.",
+        "Gain time": "Win tijd",
+        "Tell us your needs and leave the execution to professionals": "Informeer ons over uw noden en laat de uitvoering over aan professionals.",
+        "Benefit fiscally": "Geniet van fiscale voordelen",
+        "Invoice your expenses and prevent incurring personnel wages": "Factureer uw uitgaven en voorkomen personeelskosten.",
+        "Develop knowledge": "Bouw ervaring op",
+        "Prevent harsh lessons afterwards": "Geen harde lessen achteraf, maar kennisopbouw terwijl u zaken doet."
+    },
+    "services": {
+        "General administration": "Algemene administratie",
+        "communicative": "24/7 administratieve en communicatieve ondersteuning. Indienen van aanvragen, volmachten, beëdigde vertalingen, follow-up ...",
+        "Research": "Research",
+        "Collecting data according to your interests": "Het verzamelen van data die u nodig heeft.",
+        "Interposition": "Interpositie",
+        "Facilitating your contact with local and trustworthy contractors": "Facilitering van uw contacten met plaatselijke en betrouwbare leveranciers, klanten, federaties, notarissen, advocaten en boekhouders.",
+        "Representation": "Vertegenwoordiging",
+        "Representing your interests in person locally": "Uw plaatselijke en persoonlijke vertegenwoordiging"
+    },
+    "expertise": {
+        "Received a cum laude Master": "Is met onderscheiding afgestudeerd aan de Master Meertalige Communicatie (Engels, Nederlands, Turks) van de UGent en heeft lange ervaring in internationale business.",
+        "Has been specializing in international project": "Heeft zich in de afgelopen jaren gespecialiseerd in internationale project management en cross-culturele communicatie."
+    }
+}
