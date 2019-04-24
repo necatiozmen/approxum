@@ -21,7 +21,7 @@ class ContactPage extends React.Component<IContactPage.IProps, IContactPage.ISta
 
 		return (
 			<Layout pageType={'contact'}>
-				<div className="container pb-5">
+				<div className="container pt-5 pb-5">
 					<div className="row contact">
 						<Card
 							cardType={'contact'}

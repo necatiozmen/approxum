@@ -19,7 +19,7 @@ class ExpertisePage extends React.Component<IExpertisePage.IProps, IExpertisePag
 
 		return (
 			<Layout pageType={'expertise'}>
-				<div className="container">
+				<div className="container pt-5 pb-5">
 					<div className="row expertise">
 						<Card
 							cardType={'expertise'}
