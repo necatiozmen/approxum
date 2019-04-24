@@ -18,8 +18,8 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 			<Layout pageType={'home'}>
 				<div className="container-fluid home">
 					<div className="home__title">
-						<p>Your</p>
-						<p>[
+					{/* 	<p>Your</p> */}
+						<p>Your [
 						<TextLoop
 								interval={[3000, 2000]}
 							/* 	springConfig={{ stiffness: 70, damping: 31 }}
@@ -33,8 +33,9 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							</TextLoop>{""}
 							]
 						</p>
-						<p>between East</p>
-						<p>and West</p>
+						<p>between </p>
+						<p>Belgium </p>
+						<p> and Turkey</p>
 					</div>
 					<div className="home__video">
 						<div className="embed-responsive embed-responsive-16by9">

@@ -72,7 +72,7 @@
 					background-size: 200% 100%;
 					background-position: right bottom;
 					transition: all 0.4s ease-out;
-						&:hover {
+					&:hover {
 						background-position: left bottom;
 					}
 				}
@@ -112,6 +112,7 @@
 
 		&-down {
 			position: relative;
+			/* 		margin-bottom: 50px; */
 			.left {
 				background-color: #feca2e;
 				height: 185px;
@@ -164,7 +165,6 @@
 							font-size: 11px;
 						}
 						transition: none;
-						
 					}
 				}
 				&-home {
@@ -185,16 +185,6 @@
 					}
 				}
 			}
-
-			&-down {
-				.left {
-					height: 15vh;
-				}
-				.right {
-					background-color: #4f4f4f;
-					height: 6vh;
-				}
-			}
 		}
 	}
 }
@@ -205,9 +195,6 @@
 			.navbar {
 				&-lang {
 					flex-direction: row;
-					/* .lang-item {
-						margin-right: 20px;
-					} */
 				}
 			}
 		}
@@ -250,11 +237,12 @@
 			}
 			&-down {
 				.left {
-					height: 10vh;
+					height: 5vh;
 				}
 				.right {
 					background-color: #4f4f4f;
-					height: 4vh;
+					height: 3vh;
+					clip-path: polygon(40% 100%, 100% 0, 100% 100%);
 				}
 			}
 		}
