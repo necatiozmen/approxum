@@ -9,11 +9,7 @@ declare module IServicesPage {
     export interface IState { }
 	
 	export interface IStateProps { }
-	
-	export interface IDispatchProps {
-		Map(payload: Actions.IMapPayload): Actions.IMapResponse
-    }
-    
+
 	export type IProps = IOwnProps & IStateProps & IDispatchProps;
 
     module Actions {

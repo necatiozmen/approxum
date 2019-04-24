@@ -1,0 +1,38 @@
+import * as React from 'react';
+
+//#region Local Imports
+import './style.scss';
+//#endregion Local Imports
+
+export default (props): JSX.Element => (
+
+	<div className={`${props.colType} InfoCard`}>
+		<div className="InfoCard__icon">
+			<img className={props.icon} src={`/static/image/${props.icon}.png`} />
+		</div>
+		<div className="InfoCard__header">
+			<span>{props.header}</span>
+		</div>
+		<div className="InfoCard__content">
+			{(props.cardType === 'contact' || props.cardType === 'expertise') &&
+				<>
+				<span className="content__address">{props.address}</span>
+					<div className="content__num">
+						<span >{props.numFirst}</span>
+						<span>{props.numSecond}</span>
+					</div>
+					<span>{props.email}</span>
+				</>
+			}
+			{(props.cardType === 'advantages' || props.cardType === 'services') &&
+				<>
+					<span className="content__info">{props.content}</span>
+				</>
+			}
+			{props.cardType === 'expertise' &&
+					<img className="content__linkedin" src={'/static/image/linkedin.png'} />
+			}
+
+		</div>
+	</div>
+);

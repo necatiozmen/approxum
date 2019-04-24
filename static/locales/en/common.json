@@ -12,13 +12,16 @@
         "expertise": "expertise"
     },
     "contact": {
-        "Aproxum offices": "Aproxum offices",
+        "Aproxum offices": "aproxum offices",
         "Working hours": "Working hours",
         "Weekdays": "Weekdays",
         "Weekends": "Weekends"
     },
     "advantages": {
+        "Do what you are good at": "Do what you are good at home while professionals take care of your businesselsewhere.",
         "Be local abroad": "Be local abroad",
+        "Work with trustworthy":"Work with trustworthy suppliers and clients abroad.",
+        "Acquire expertise while doing": "Acquire expertise while doing business at the same time.",
         "Don’t compromise your effectiveness or efficiency": "Don’t compromise your effectiveness or efficiency.",
         "Gain time": "Gain time",
         "Tell us your needs and leave the execution to professionals": "Tell us your needs and leave the execution to professionals. ",
@@ -28,10 +31,13 @@
         "Prevent harsh lessons afterwards": "Prevent harsh lessons afterwards and acquire practices while doing business."
     },
     "services": {
+        "Connecting you with local customers": "Connecting you with local customers, notaries, lawyers, accountants and federations.",
+        "outsourcing": "outsourcing",
+        "Taking care of your": "Taking care of your communication, applications and translations 24/7.",
         "General administration": "General administration",
         "communicative": "24/7 communicative and administrative suppor: Submission of applications, power of attorneys, certifierd translations, follow-up, ..",
-        "Research": "Research",
-        "Collecting data according to your interests": "Collecting data according to your interests.",
+        "Market Research": "Market Research",
+        "Collecting data": "Collecting the data you need for your market.",
         "Interposition": "Interposition",
         "Facilitating your contact with local and trustworthy contractors": "Facilitating your contact with local and trustworthy contractors, customers, federations, notaries,lawyers and accountants.",
         "Representation": "Representation",

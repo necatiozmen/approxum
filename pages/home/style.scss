@@ -1,95 +1,73 @@
 .home {
 	display: flex;
-	padding-top: 70px;
-	background-image: url("/static/image/map.png");
-	background-repeat: no-repeat;
-	background-size: 34%;
-	background-position: 92% 0%;
-	position: absolute;
-	top: 36%;
-
+	justify-content: space-between;
+	padding-right: 150px;
 	&__title {
 		display: flex;
 		flex-direction: column;
 		color: #595959;
-		font-size: 72px;
+		font-size: 70px;
 		font-weight: 600;
-		width: 40%;
-		text-align: right;
+		width: 60%;
+		text-align: center;
 		line-height: 1.1;
-
 		p {
 			margin-bottom: 0 !important;
 		}
 	}
 
 	&__video {
-		margin-left: 60px;
-
-		width: 31%;
-		
-
-
-	}
-
-	&__img {
-		position: absolute;
-		width: 450px;
-		right: 60px;
-		top: 0;
-		img {
-			width: 100%;
-		}
+		width: 50%;
 	}
 }
 
 @media only screen and (max-width: 1199px) {
 	.home {
-		background-position: 92% 23%;
+		padding-right: 90px;
+		padding-bottom: 40px !important;
 		&__title {
-			font-size: 45px;
+			font-size: 50px;
+		}
+		&__video {
+			width: 65%;
 		}
 	}
 }
 @media only screen and (max-width: 991px) {
 	.home {
-		flex-direction: column-reverse;
+		flex-direction: column;
 		align-items: center;
-		padding-top: 35px;
-		background-size: 43%;
-		background-position: 96% 0%;
+		padding-right: 15px;
+
 		&__title {
-			font-size: 28px;
-			flex-direction: row;
-			width: 90%;
-			padding-left: 100px;
-			padding-top: 10px;
+			font-size: 32px;
+			flex-direction: column;
+			width: 100%;
+			padding-left: 0;
+			padding-top: 0;
+			margin-bottom: 20px;
 			p {
 				margin-right: 5px;
 			}
 		}
 
 		&__video {
-			width: 50%;
+			width: 45%;
 			margin-left: 0;
 		}
 	}
 }
 @media only screen and (max-width: 575px) {
 	.home {
-		padding-top: 80px;
-		background-size: 35%;
-		background-position: 94% 0%;
-		position: relative;
+		padding-right: 15px;
+	
 		&__title {
-			font-size: 26px;
+			font-size: 35px;
 			flex-direction: column;
-			width: 52%;
-			padding-left: 0;
 		}
 
 		&__video {
-			width: 80%;
+			width: 100%;
 		}
 	}
 }
