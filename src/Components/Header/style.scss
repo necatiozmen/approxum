@@ -7,6 +7,16 @@
 			}
 		}
 
+		.dropdown {
+			.lang-drop-menu {
+				min-width: 3.78rem;
+			}
+
+			.drop-button {
+				background: #ffc402;
+			}
+		}
+
 		.navbar-collapse {
 			align-items: baseline;
 		}
@@ -15,9 +25,9 @@
 			&-nav {
 				padding: 0 1rem !important;
 				flex-wrap: wrap;
-				width: 73%;
+				width: 60%;
 				justify-content: space-around;
-				margin-left: 50px;
+				margin-left: 105px;
 
 				a {
 					color: #4f4f4f;
@@ -140,9 +150,19 @@
 				&-nav {
 					margin-left: 0;
 					width: 96%;
+					.nav-item {
+						width: 145px;
+					}
 				}
-
+				&-home {
+					.nav-item {
+						width: 145px;
+					}
+				}
 				&-lang {
+					.lang-item {
+						width: 48px;
+					}
 				}
 			}
 		}

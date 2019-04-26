@@ -2,6 +2,7 @@
 	display: flex;
 	justify-content: space-between;
 	padding-right: 150px;
+	padding-bottom: 65px;
 	&__title {
 		display: flex;
 		flex-direction: column;
@@ -29,7 +30,7 @@
 			font-size: 50px;
 		}
 		&__video {
-			width: 65%;
+			width: 58%;
 		}
 	}
 }
@@ -64,10 +65,12 @@
 		&__title {
 			font-size: 35px;
 			flex-direction: column;
+			
 		}
 
 		&__video {
 			width: 100%;
+			z-index: 1;
 		}
 	}
 }
