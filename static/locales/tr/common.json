@@ -15,27 +15,35 @@
         "Aproxum offices": "aproxum ofisleri",
         "Working hours": "Çalışma saatleri",
         "Weekdays": "Hafta içi",
-        "Weekends": "Hafta sonu"
+        "Weekends": "Hafta sonu",
+        "Belgium": "BELÇİKA",
+        "Turkey": "TÜRKİYE"
     },
     "advantages": {
-        "Be local abroad": "Yurt dışında yerel hizmet sunun",
+        "Be local abroad": "yerel hizmet sunun",
+        "Do what you are good at": "Burada iyi olduğunuz işi yaparken profesyoneller yurt dışındaki işlerinizle ilgilensin.", 
         "Don’t compromise your effectiveness or efficiency": "Etkinliğinizden veya verimliliğinizden ödün vermeyin.",
-        "Gain time": "Zamandan tasarruf edin",
+        "Gain time": "zamandan kazanın",
+        "Work with trustworthy": "Yurt dışında güvenilir tedarikçi ve müşterilerle çalışın.",
         "Tell us your needs and leave the execution to professionals": "İhtiyaçlarınızı bizimle paylaşın ve sonrasını profesyonellere bırakın.",
-        "Benefit fiscally": "Mali avantaj elde edin",
-        "Invoice your expenses and prevent incurring personnel wages": "Giderlerinizi faturaya yansıtarak yüksek personel masraflarından kaçının.",
-        "Develop knowledge": "Bilgi biriktirin",
+        "Benefit fiscally": "mali avantaj elde edin",
+        "Invoice your expenses and prevent incurring personnel wages": "Giderlerinizi faturaya yansıtarak personel masrafı ve vergi ödemeyin.",
+        "Develop knowledge": "bilgi edinin",
+        "Acquire expertise while doing": "İş yaparken uzmanlık kazanın.",
         "Prevent harsh lessons afterwards": "Sonradan ders çırkarmak yerine iş yaparken bilgi birikimi edinin."
     },
     "services": {
-        "General administration": "Genel idare",
-        "communicative": "7/24 iletişim ve idare desteği. Başvuru, vekâletname, yeminli tercüme, dosya takibi...",
+        "General administration": "genel idare",
+        "Taking care of your": "7/24 iletişim, başvuru ve çeviri desteği.",
+        "outsourcing": "outsourcing",
         "Research": "Araştırma",
-        "Collecting data according to your interests": "İhtiyaçlarınız doğrultusunda veri toplama.",
+        "Connecting you with local customers": "Yerel müşteri, noter, avukat, muhasebeci ve federasyonlarla bağlantınız.",
+        "Collecting data": "Pazarınızda ihtiyacınız olan verilerin toplanması.",
+        "Market Research": "Pazar araştırması",
         "Interposition": "Aracılık",
         "Facilitating your contact with local and trustworthy contractors": "Yerel ve güvenilir tedarikçi, müşteri, federasyon, noter, avukat ve muhasebecilerle bağlantınız.",
-        "Representation": "Temsil",
-        "Representing your interests in person locally": "Yerel mecralarda şahsi temsiliniz."
+        "Representation": "temsil",
+        "Representing your interests in person locally": "Yerel ve kişisel temsiliniz."
     },
     "expertise": {
         "Received a cum laude Master": "Gent Üniversitesi Çok Dilli İletişim (İngilizce, Hollandaca, Türkçe) masterını derece ile bitirmiş, kapsamlı uluslararası işletme deneyimine sahiptir.",

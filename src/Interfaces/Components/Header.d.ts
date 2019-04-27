@@ -7,7 +7,12 @@ declare module IHeader {
         pageType: string;
         t: any;
         lng: string;
+    
     }
 
-    export interface IState { }
+    export interface IState {
+        deviceType: any;
+        screenType: string;
+        langButton: string;
+    }
 }
