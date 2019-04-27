@@ -67,9 +67,12 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 						}
 					</div>
 					<div className="home__video">
-						<div className="embed-responsive embed-responsive-16by9">
+						<iframe className="youtube" 
+							src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
+						</iframe>
+					{/* 	<div className="embed-responsive embed-responsive-16by9">
 							<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowFullScreen></iframe>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</Layout>

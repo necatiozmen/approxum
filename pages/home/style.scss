@@ -1,7 +1,7 @@
 .home {
 	display: flex;
 	justify-content: space-between;
-	padding-right: 150px;
+	padding-right: 63px;
 	padding-bottom: 65px;
 	&__title {
 		display: flex;
@@ -9,7 +9,7 @@
 		color: #595959;
 		font-size: 96px;
 		font-weight: 600;
-		width: 60%;
+		width: 52%;
 		text-align: center;
 		line-height: 1.1;
 		p {
@@ -18,19 +18,29 @@
 	}
 
 	&__video {
-		width: 50%;
+				width: 43%;
+
+		.youtube {
+			width: 560px;
+			height: 415px;
+		}
 	}
 }
 
 @media only screen and (max-width: 1199px) {
 	.home {
-		padding-right: 90px;
+		padding-right: 70px;
 		padding-bottom: 40px !important;
 		&__title {
 			font-size: 50px;
+			width: 60%;
 		}
 		&__video {
 			width: 58%;
+			.youtube {
+				width: 475px;
+				height: 250px;
+			}
 		}
 	}
 }
@@ -53,7 +63,7 @@
 		}
 
 		&__video {
-			width: 45%;
+			width: 65%;
 			margin-left: 0;
 		}
 	}
@@ -61,16 +71,19 @@
 @media only screen and (max-width: 575px) {
 	.home {
 		padding-right: 15px;
-	
+
 		&__title {
 			font-size: 35px;
 			flex-direction: column;
-			
 		}
 
 		&__video {
 			width: 100%;
 			z-index: 1;
+				.youtube {
+				width: 350px;
+				height: 250px;
+			}
 		}
 	}
 }

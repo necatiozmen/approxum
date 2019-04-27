@@ -15,7 +15,10 @@
         "Aproxum offices": "aproxum offices",
         "Working hours": "Working hours",
         "Weekdays": "Weekdays",
-        "Weekends": "Weekends"
+        "Weekends": "Weekends",
+        "Belgium": "BELGIUM",
+        "Turkey": "TURKEY"
+        
     },
     "advantages": {
         "Do what you are good at": "Do what you are good at home while professionals take care of your business elsewhere.",
@@ -34,9 +37,8 @@
         "Connecting you with local customers": "Connecting you with local customers, notaries, lawyers, accountants and federations.",
         "outsourcing": "outsourcing",
         "Taking care of your": "Taking care of your communication, applications and translations 24/7.",
-        "General administration": "General administration",
-        "communicative": "24/7 communicative and administrative suppor: Submission of applications, power of attorneys, certifierd translations, follow-up, ..",
-        "Market Research": "market Research",
+        "General administration": "general administration",
+        "Market Research": "market research",
         "Collecting data": "Collecting the data you need for your market.",
         "Interposition": "Interposition",
         "Facilitating your contact with local and trustworthy contractors": "Facilitating your contact with local and trustworthy contractors, customers, federations, notaries,lawyers and accountants.",

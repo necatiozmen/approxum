@@ -26,7 +26,7 @@ class ContactPage extends React.Component<IContactPage.IProps, IContactPage.ISta
 						<Card
 							cardType={'contact'}
 							icon={'building'}
-							header={`${t('common:contact.Aproxum offices')} BELGIUM`}
+							header={`${t('common:contact.Aproxum offices')} ${t('common:contact.Belgium')} `}
 							address={'Galgenberglaan 18a 9070 Destelbergen'}
 							numFirst={'+32 9 256 11 16'}
 							numSecond={'+32 488 59 78 91'}
@@ -36,7 +36,7 @@ class ContactPage extends React.Component<IContactPage.IProps, IContactPage.ISta
 						<Card
 							cardType={'contact'}
 							icon={'building'}
-							header={`${t('common:contact.Aproxum offices')} TURKEY`}
+							header={`${t('common:contact.Aproxum offices')} ${t('common:contact.Turkey')}`}
 							address={'Üsküdar Mah. Sarıyer Sok. 9 34586 Beşiktaş'}
 							numFirst={'+90 9 256 11 16'}
 							numSecond={'+90 488 59 78 91'}
