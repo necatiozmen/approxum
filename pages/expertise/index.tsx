@@ -24,7 +24,7 @@ class ExpertisePage extends React.Component<IExpertisePage.IProps, IExpertisePag
 						<Card
 							cardType={'expertise'}
 							icon={'profile'}
-							header={'Nurettin Macit'}
+							header={'Nureddin Macit'}
 							address={'Galgenberglaan 18a 9070 Destelbergen'}
 							numFirst={'+32 9 256 11 16'}
 							numSecond={'+32 488 59 78 91'}
