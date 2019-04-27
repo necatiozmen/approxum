@@ -27,14 +27,14 @@ class AdvantagesPage extends React.Component<IAdvantagesPage.IProps, IAdvantages
 							cardType={'advantages'}
 							icon={'hourglass'}
 							header={t('common:advantages.Gain time')}
-							content={t('common:advantages.Do what you are good at')}
+							content={t('common:advantages.Tell us your needs and leave the execution to professionals')}
 							colType={'col-md-3'}
 						/>
 						<Card
 							cardType={'advantages'}
 							icon={'diagram'}
 							header={t('common:advantages.Be local abroad')}
-							content={t('common:advantages.Work with trustworthy')}
+							content={t('common:advantages.Don’t compromise your effectiveness or efficiency')}
 							colType={'col-md-3'}
 						/>
 						<Card
@@ -48,7 +48,7 @@ class AdvantagesPage extends React.Component<IAdvantagesPage.IProps, IAdvantages
 							cardType={'advantages'}
 							icon={'presentation'}
 							header={t('common:advantages.Develop knowledge')}
-							content={t('common:advantages.Acquire expertise while doing')}
+							content={t('common:advantages.Prevent harsh lessons afterwards')}
 							colType={'col-md-3'}
 						/>
 					</div>

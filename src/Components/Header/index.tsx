@@ -15,9 +15,6 @@ import { setDeviceType } from '@Definations';
 import { IHeader } from '@Interfaces';
 //#endregion Interface Imports
 
-
-
-
 class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 	public constructor(props: IHeader.IProps) {
