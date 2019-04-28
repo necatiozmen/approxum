@@ -21,7 +21,7 @@ class ServicesPage extends React.Component<IServicesPage.IProps, IServicesPage.I
 		
 		return (
 			<Layout pageType={'services'}>
-				<div className="container-fluid">
+				<div className="container-fluid services-container">
 					<div className="row services">
 						<Card
 							cardType={'services'}
