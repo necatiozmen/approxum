@@ -1,4 +1,11 @@
 .expertise {
 	justify-content: center;
+	padding-top: 90px;
 
+}
+
+@media only screen and (max-width: 1199px) {
+	.expertise {
+		padding-top: 0px;
+	}
 }
