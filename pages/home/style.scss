@@ -18,7 +18,7 @@
 	}
 
 	&__video {
-				width: 43%;
+		width: 43%;
 
 		.youtube {
 			width: 560px;
@@ -26,10 +26,10 @@
 		}
 	}
 
-	&__typewriter{
+	&__typewriter {
 		display: flex;
 		justify-content: center;
-		.lfm__typing_effect{
+		.lfm__typing_effect {
 			margin-left: 20px;
 		}
 	}
@@ -75,12 +75,11 @@
 			margin-left: 0;
 		}
 
-
-			&__typewriter{
-		.lfm__typing_effect{
-			margin-left:5px;
+		&__typewriter {
+			.lfm__typing_effect {
+				margin-left: 5px;
+			}
 		}
-	}
 	}
 }
 @media only screen and (max-width: 575px) {
@@ -94,10 +93,10 @@
 
 		&__video {
 			width: 100%;
-			z-index: 1;
-				.youtube {
-				width: 350px;
-				height: 250px;
+			 padding-left: 45px; 
+			.youtube {
+				width: 250px;
+				height: 150px;
 			}
 		}
 	}

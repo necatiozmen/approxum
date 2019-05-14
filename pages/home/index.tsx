@@ -1,16 +1,20 @@
 //#region Global Imports
 import * as React from 'react';
-import TextLoop from "react-text-loop";
 import { i18n, withNamespaces } from '../../i18n';
-import ReactTypingEffect from 'react-typing-effect';
-import Typing from 'react-typing-animation';
+import dynamic from 'next/dynamic'
+/* import ReactTypingEffect from 'react-typing-effect'; */
 
-import Typewriter from 'typewriter-effect';
+const ReactTypingEffect = dynamic(
+	import('react-typing-effect'),
+	{ ssr: false }
+)
+
 //#endregion Global Imports
 
 import './style.scss';
+
 //#region Interface Imports
-import { IHomePage, IStore } from '@Interfaces';
+import { IHomePage } from '@Interfaces';
 import { Layout } from '@Components';
 //#endregion Interface Imports
 
@@ -26,20 +30,10 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							<>
 								<div className="home__typewriter">
 									<p>Your</p>
-								<span>This line will stay.</span>
-								<span>This line will get instantly removed after a 500 ms delay</span>
-
-							{/* 	<Typewriter
-									options={{
-										strings: ['bridge', 'connection', 'home', 'harbor'],
-										autoStart: true,
-										loop: true,
-									}}
-								/> */}
-									{/* <ReactTypingEffect
+									<ReactTypingEffect
 										text={['bridge', 'connection', 'home', 'harbor']}
 										speed={120}
-									/> */}
+									/>
 								</div>
 								<p>between </p>
 								<p>Belgium </p>
@@ -50,10 +44,11 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							<>
 								<div className="home__typewriter">
 									<p>Uw</p>
-									{/* <ReactTypingEffect
+
+									<ReactTypingEffect
 										text={['brug', 'verbinding', 'thuis', 'haven']}
 										speed={120}
-									/> */}
+									/>
 								</div>
 								<p>tussen</p>
 								<p>België</p>
@@ -66,16 +61,10 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 								<p>ve Türkiye</p>
 								<p>arasindaki</p>
 								<p>
-									{/* <ReactTypingEffect
+									<ReactTypingEffect
 										text={['köprünüz', 'bağlantınız', 'eviniz', 'limanınız']}
 										speed={120}
-									/> */}
-									{/* 		<TextLoop interval={[3000, 2000]}>
-										<span>köprünüz</span>
-										<span>bağlantınız</span>
-										<span>eviniz</span>
-										<span>limanınız</span>
-									</TextLoop>{""}. */}
+									/>
 								</p>
 							</>
 						}
@@ -84,9 +73,6 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 						<iframe className="youtube"
 							src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
 						</iframe>
-						{/* 	<div className="embed-responsive embed-responsive-16by9">
-							<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" allowFullScreen></iframe>
-						</div> */}
 					</div>
 				</div>
 			</Layout>
