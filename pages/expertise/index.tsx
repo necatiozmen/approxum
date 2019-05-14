@@ -19,7 +19,7 @@ class ExpertisePage extends React.Component<IExpertisePage.IProps, IExpertisePag
 
 		return (
 			<Layout pageType={'expertise'}>
-				<div className="container pt-5 pb-5">
+				<div className="container ">
 					<div className="row expertise">
 						<Card
 							cardType={'expertise'}
@@ -30,16 +30,18 @@ class ExpertisePage extends React.Component<IExpertisePage.IProps, IExpertisePag
 							numSecond={'+32 488 59 78 91'}
 							email={'belgium@aproxum.com'}
 							colType={'col-md-4'}
+							user={'myr'}
 						/>
 						<Card
 							cardType={'expertise'}
 							icon={'profile'}
 							header={'Hümeyra Macit'}
-							address={'Üsküdar Mah. Sarıyer Sok. 9 34586 Beşiktaş'}
-							numFirst={'+90 9 256 11 16'}
-							numSecond={'+90 488 59 78 91'}
-							email={'turkey@aproxum.com'}
+							address={'Atatürk Mah. Mithatpaşa Cad. Yeşil Sok. Yeşil Apt.  '}
+							numFirst={'No:79 K:2 D:3  '}
+							numSecond={'34764 Ümraniye/İstanbul'}
+							email={'+90 532 062 69 39'}
 							colType={'col-md-4'}
+							user={'mct'}
 						/>
 					</div>
 				</div>
