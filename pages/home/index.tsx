@@ -62,7 +62,7 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 								<p>arasindaki</p>
 								<p>
 									<ReactTypingEffect
-										text={['köprünüz', 'bağlantınız', 'eviniz', 'limanınız']}
+										text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
 										speed={120}
 									/>
 								</p>
