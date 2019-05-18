@@ -12,7 +12,7 @@ import { Card, Layout } from '@Components';
 class ExpertisePage extends React.Component<IExpertisePage.IProps, IExpertisePage.IState> {
 	public static async getInitialProps(): Promise<IExpertisePage.IProps> {
 		return {
-			namespacesRequired: ['common', 'AdvantagesPage']
+			namespacesRequired: ['common', 'ExpertisePage']
 		};
 	}
 	public render(): JSX.Element {

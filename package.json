@@ -23,12 +23,9 @@
     "react-no-ssr": "^1.1.0",
     "react-redux": "^6.0.0",
     "react-select": "^2.4.3",
-    "react-text-loop": "^2.0.1",
-    "react-typing-animation": "^1.6.2",
     "react-typing-effect": "^2.0.2",
     "redux": "^4.0.1",
-    "redux-thunk": "^2.3.0",
-    "typewriter-effect": "^2.5.3"
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
     "@types/next": "^7.0.5",

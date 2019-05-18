@@ -2,7 +2,6 @@
 import * as React from 'react';
 import { i18n, withNamespaces } from '../../i18n';
 import dynamic from 'next/dynamic'
-/* import ReactTypingEffect from 'react-typing-effect'; */
 
 const ReactTypingEffect = dynamic(
 	import('react-typing-effect'),
@@ -19,6 +18,13 @@ import { Layout } from '@Components';
 //#endregion Interface Imports
 
 export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState> {
+		public static async getInitialProps(): Promise<IHomePage.IProps> {
+			
+		return {
+			namespacesRequired: ['common', 'HomePage']
+		};
+	}
+
 	public render(): JSX.Element {
 		const { i18n } = this.props;
 
@@ -59,7 +65,7 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							<>
 								<p>Belçika</p>
 								<p>ve Türkiye</p>
-								<p>arasindaki</p>
+								<p>arasındaki</p>
 								<p>
 									<ReactTypingEffect
 										text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}

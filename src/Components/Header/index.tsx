@@ -62,7 +62,7 @@ class Header extends React.Component<IHeader.IProps, IHeader.IState> {
 
 		return (
 			<div className="header-container">
-				<nav className="navbar navbar-expand-md header navbar-light">
+				<nav className="navbar navbar-expand-md header navbar-light ">
 					<div className="container-fluid">
 						<Link href="/home" as="/">
 							<div className="header__logo">

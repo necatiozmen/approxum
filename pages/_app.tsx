@@ -21,6 +21,7 @@ import { IApp } from '@Interfaces';
 
 class MyApp extends App<IApp.IProps> {
     static async getInitialProps(props: any) {
+        
         let pageProps = {};
 
         if (props.Component.getInitialProps) {

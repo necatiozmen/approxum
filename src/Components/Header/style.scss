@@ -21,8 +21,15 @@
 		.navbar-collapse {
 			align-items: baseline;
 			justify-content: center;
-		}
 
+			ul {
+				/* 	 height: 100vh; */
+			}
+		}
+	/* 	.navbar-collapse ul {
+			height: 100vh;
+		}
+ */
 		.navbar {
 			&-nav {
 				padding: 0 1rem !important;
@@ -204,13 +211,11 @@
 					}
 				}
 				&-home {
-				
-
 					.nav-item {
 						width: 110px;
-							a {
-						font-size: 11px;
-					}
+						a {
+							font-size: 11px;
+						}
 					}
 				}
 				&-lang {
@@ -274,7 +279,6 @@
 					.nav-item {
 						transition: none;
 					}
-
 				}
 			}
 			&-down {
@@ -285,6 +289,18 @@
 					background-color: #4f4f4f;
 					height: 3vh;
 					clip-path: polygon(40% 100%, 100% 0, 100% 100%);
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 360px) {
+	.header-container {
+		.header {
+			.navbar {
+				&-nav {
+					margin-left: 93px;
+				
 				}
 			}
 		}
