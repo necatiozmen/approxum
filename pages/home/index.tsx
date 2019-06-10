@@ -64,7 +64,7 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 						{i18n.language === 'tr' &&
 							<div className="home__typewriter">
 								<div className="">
-									Belçika ve Türkiye arasındaki 
+									Belçika ve Türkiye arasındaki
 								</div>
 								<ReactTypingEffect
 									text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
