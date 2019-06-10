@@ -2,7 +2,6 @@
 	.header {
 		&__logo {
 			width: 575px;
-			padding-left: 220px;
 			img {
 				width: 100%;
 			}
@@ -21,15 +20,8 @@
 		.navbar-collapse {
 			align-items: baseline;
 			justify-content: center;
+		}
 
-			ul {
-				/* 	 height: 100vh; */
-			}
-		}
-	/* 	.navbar-collapse ul {
-			height: 100vh;
-		}
- */
 		.navbar {
 			&-nav {
 				padding: 0 1rem !important;

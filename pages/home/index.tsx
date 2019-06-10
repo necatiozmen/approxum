@@ -30,7 +30,7 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 
 		return (
 			<Layout pageType={'home'}>
-				<div className="container-fluid home">
+				<div className="container home">
 					<div className="home__title">
 						{i18n.language === 'en' &&
 							<>
@@ -41,9 +41,9 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 										speed={120}
 									/>
 								</div>
-								<p>between </p>
-								<p>Belgium </p>
-								<p>and Turkey</p>
+							<p>between Belgium and Turkey</p>
+								<p></p>
+								<p></p>
 							</>
 						}
 						{i18n.language === 'nl' &&
@@ -62,23 +62,24 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 							</>
 						}
 						{i18n.language === 'tr' &&
-							<>
-								<p>Belçika</p>
-								<p>ve Türkiye</p>
-								<p>arasındaki</p>
-								<p>
-									<ReactTypingEffect
-										text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
-										speed={120}
-									/>
-								</p>
-							</>
+							<div className="home__typewriter">
+								<div className="">
+									Belçika ve Türkiye arasındaki 
+								</div>
+								<ReactTypingEffect
+									text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
+									speed={120}
+								/>
+							</div>
 						}
 					</div>
 					<div className="home__video">
-						<iframe className="youtube"
+						<div className="embed-responsive embed-responsive-16by9">
+							<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+						</div>
+					{/* 	<iframe className="youtube"
 							src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-						</iframe>
+						</iframe> */}
 					</div>
 				</div>
 			</Layout>
