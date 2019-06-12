@@ -18,8 +18,8 @@ import { Layout } from '@Components';
 //#endregion Interface Imports
 
 export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState> {
-		public static async getInitialProps(): Promise<IHomePage.IProps> {
-			
+	public static async getInitialProps(): Promise<IHomePage.IProps> {
+
 		return {
 			namespacesRequired: ['common', 'HomePage']
 		};
@@ -30,55 +30,54 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 
 		return (
 			<Layout pageType={'home'}>
-				<div className="container-fluid home">
+				<div className="container home">
 					<div className="home__title">
 						{i18n.language === 'en' &&
-							<>
-								<div className="home__typewriter">
+							<div className="home__typewriter foreign">
+								<div className="home__typewriter__en">
 									<p>Your</p>
 									<ReactTypingEffect
 										text={['bridge', 'connection', 'home', 'harbor']}
 										speed={120}
 									/>
+									<div className="second-word">
+										<p>between Belgium and Turkey</p>
+
+									</div>
 								</div>
-								<p>between </p>
-								<p>Belgium </p>
-								<p>and Turkey</p>
-							</>
+							</div>
 						}
 						{i18n.language === 'nl' &&
-							<>
-								<div className="home__typewriter">
-									<p>Uw</p>
 
+							<div className="home__typewriter foreign">
+								<div className="home__typewriter__en">
+									<p>Uw</p>
 									<ReactTypingEffect
 										text={['brug', 'verbinding', 'thuis', 'haven']}
 										speed={120}
 									/>
+									<div className="second-word">
+										<p>tussen België en Turkije.</p>
+									</div>
 								</div>
-								<p>tussen</p>
-								<p>België</p>
-								<p>en Turkije.</p>
-							</>
+							</div>
 						}
 						{i18n.language === 'tr' &&
-							<>
-								<p>Belçika</p>
-								<p>ve Türkiye</p>
-								<p>arasındaki</p>
+							<div className="home__typewriter">
 								<p>
-									<ReactTypingEffect
-										text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
-										speed={120}
-									/>
+									Belçika ve Türkiye arasındaki
 								</p>
-							</>
+								<ReactTypingEffect
+									text={['köprünüz.', 'bağlantınız.', 'eviniz.', 'limanınız.']}
+									speed={120}
+								/>
+							</div>
 						}
 					</div>
 					<div className="home__video">
-						<iframe className="youtube"
-							src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&loop=1">
-						</iframe>
+						<div className="embed-responsive embed-responsive-16by9">
+							<iframe className="embed-responsive-item" src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0" allowfullscreen></iframe>
+						</div>
 					</div>
 				</div>
 			</Layout>
