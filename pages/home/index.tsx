@@ -40,7 +40,10 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 										text={['bridge', 'connection', 'home', 'harbor']}
 										speed={120}
 									/>
-									<p>between Belgium and Turkey</p>
+									<div className="second-word">
+										<p>between Belgium and Turkey</p>
+
+									</div>
 								</div>
 							</div>
 						}
@@ -53,7 +56,9 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 										text={['brug', 'verbinding', 'thuis', 'haven']}
 										speed={120}
 									/>
+								<div className="second-word">
 									<p>tussen België en Turkije.</p>
+									</div>
 								</div>
 							</div>
 						}

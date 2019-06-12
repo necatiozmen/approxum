@@ -3,7 +3,7 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding-bottom: 65px;
-	align-items: center; 
+	align-items: center;
 	&__title {
 		display: flex;
 		flex-direction: column;
@@ -32,6 +32,7 @@
 		}
 		&__en {
 			display: flex;
+		
 		}
 
 		.lfm__typing_effect {
@@ -70,6 +71,10 @@
 
 			&__en {
 				flex-direction: column;
+					.second-word {
+				padding-left: 70px;
+				padding-right: 70px;
+			}
 			}
 		}
 	}
