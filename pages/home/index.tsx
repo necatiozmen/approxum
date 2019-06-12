@@ -56,8 +56,8 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 										text={['brug', 'verbinding', 'thuis', 'haven']}
 										speed={120}
 									/>
-								<div className="second-word">
-									<p>tussen België en Turkije.</p>
+									<div className="second-word">
+										<p>tussen België en Turkije.</p>
 									</div>
 								</div>
 							</div>
