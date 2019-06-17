@@ -37,9 +37,9 @@ class ContactPage extends React.Component<IContactPage.IProps, IContactPage.ISta
 							cardType={'contact'}
 							icon={'building'}
 							header={`${t('common:contact.Aproxum offices')} ${t('common:contact.Turkey')}`}
-							address={'Üsküdar Mah. Sarıyer Sok. 9 34586 Beşiktaş'}
-							numFirst={'+90 9 256 11 16'}
-							numSecond={'+90 488 59 78 91'}
+							address={'Atatürk Mah. Mithatpaşa Cad. Yeşil Sok. Yeşil Apt. No:79 K:2 D:3 34764 Ümraniye/İstanbul'}
+							numFirst={'K:2 D:3 34764 Ümraniye/İstanbul'}
+							numSecond={'+90 532 062 69 39'}
 							email={'turkey@aproxum.com'}
 							colType={'col-md-4'}
 						/>

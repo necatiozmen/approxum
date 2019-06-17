@@ -12,7 +12,6 @@ import store from '@Redux/store';
 
 import '@Vendor/bootstrap.min.css';
 
-
 //#endregion Local Imports
 
 //#region Interface Imports

@@ -38,7 +38,7 @@ export class HomePage extends React.Component<IHomePage.IProps, IHomePage.IState
 									<p>Your</p>
 									<ReactTypingEffect
 										text={['bridge', 'connection', 'home', 'harbor']}
-										speed={120}
+										speed={75}
 									/>
 									<div className="second-word">
 										<p>between Belgium and Turkey</p>
