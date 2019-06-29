@@ -16,7 +16,7 @@ export default (props): JSX.Element => (
 		<div className="InfoCard__content">
 			{(props.cardType === 'contact' || props.cardType === 'expertise') &&
 				<>
-				<span className="content__address">{props.address}</span>
+					<span className="content__address">{props.address}</span>
 					<div className="content__num">
 						<span >{props.numFirst}</span>
 						<span>{props.numSecond}</span>
@@ -30,7 +30,10 @@ export default (props): JSX.Element => (
 				</>
 			}
 			{props.cardType === 'expertise' &&
+				<a href={props.user === 'mct' ? 'https://www.linkedin.com/in/h%C3%BCmeyra-macit-b1192548/'
+					: 'https://www.linkedin.com/in/nureddinmacit/'}>
 					<img className="content__linkedin" src={'/static/image/linkedin.png'} />
+				</a>
 			}
 
 		</div>

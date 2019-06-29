@@ -2,13 +2,10 @@
 	.header {
 		&__logo {
 			width: 575px;
-			padding-left: 220px;
 			img {
 				width: 100%;
 			}
 		}
-
-
 
 		.dropdown {
 			.lang-drop-menu {
@@ -29,8 +26,8 @@
 			&-nav {
 				padding: 0 1rem !important;
 				flex-wrap: wrap;
-			/* 	width: 33%; */
-			width: 400px;
+				/* 	width: 33%; */
+				width: 400px;
 				justify-content: space-around;
 				margin-left: 136px;
 
@@ -151,26 +148,25 @@
 @media only screen and (max-width: 1199px) {
 	.header-container {
 		.header {
-			&__logo{
+			&__logo {
 				width: 515px;
 				padding-left: 0;
 			}
 			.navbar {
 				&-nav {
-					a{
+					a {
 						font-size: 16px;
 					}
 					margin-left: 0;
 					width: 65%;
 					.nav-item {
 						width: 145px;
-						
 					}
 				}
 				&-home {
 					.nav-item {
 						width: 145px;
-						a{
+						a {
 							font-size: 16px;
 						}
 					}
@@ -178,7 +174,7 @@
 				&-lang {
 					.lang-item {
 						width: 48px;
-						a{
+						a {
 							font-size: 16px;
 						}
 					}
@@ -207,12 +203,11 @@
 					}
 				}
 				&-home {
-					a {
-						font-size: 11px;
-					}
-
 					.nav-item {
 						width: 110px;
+						a {
+							font-size: 11px;
+						}
 					}
 				}
 				&-lang {
@@ -272,6 +267,10 @@
 					display: flex;
 					flex-direction: column;
 					align-items: center;
+
+					.nav-item {
+						transition: none;
+					}
 				}
 			}
 			&-down {
@@ -282,6 +281,18 @@
 					background-color: #4f4f4f;
 					height: 3vh;
 					clip-path: polygon(40% 100%, 100% 0, 100% 100%);
+				}
+			}
+		}
+	}
+}
+@media only screen and (max-width: 360px) {
+	.header-container {
+		.header {
+			.navbar {
+				&-nav {
+					margin-left: 93px;
+				
 				}
 			}
 		}

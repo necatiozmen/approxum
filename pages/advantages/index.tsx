@@ -21,7 +21,7 @@ class AdvantagesPage extends React.Component<IAdvantagesPage.IProps, IAdvantages
 
 		return (
 			<Layout pageType={'advantages'}>
-				<div className="container-fluid">
+				<div className="container-fluid advantages-container">
 					<div className="row advantages">
 						<Card
 							cardType={'advantages'}
