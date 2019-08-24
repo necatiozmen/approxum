@@ -6,7 +6,9 @@ import './style.scss';
 
 export const Footer = (props: any): JSX.Element => (
 	<div className="footer">
-		<div className="left"></div>
-		<div className="right"></div>
+		<div className="footer__inner-container">
+			<div className="left"></div>
+			<div className="right"></div>
+		</div>
 	</div>
 );

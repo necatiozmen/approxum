@@ -9,7 +9,7 @@ export default class MyDocument extends Document {
 					<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 					<meta charSet="utf-8" />
 					<style>{`
-								#__next {   min-height:100vh; overflow: auto; display: flex; flex-direction: column; justify-content: space-between;}
+								#__next {   }
         				   `}
 					</style>
 				</Head>
